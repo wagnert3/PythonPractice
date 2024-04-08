@@ -1,0 +1,241 @@
+ body {
+    background-color: #ddc9c9;
+    text-align: center;
+    /* add cursive font comic sans */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh; 
+    padding-top: 1.5rem; 
+}
+
+#customMessage {
+    font-size: 1.7rem; 
+    font-weight: bold; 
+    color: #007bff; 
+    margin-bottom: 20px; 
+}
+
+footer {    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.image-container{
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+    margin-bottom: 20px; 
+    margin-top: 40px;
+    width: 600px;
+}
+
+.image-character {
+    width: 300px;    
+}
+
+.image-summary {
+    width: 200px; 
+}
+
+.image-scenario {
+  width: 300px;  
+}
+
+.game-border {
+    margin: 30px auto;
+    max-width: 800px; /* Adjust based on your preference */
+    border: 3px solid #0823ff00; /* Basic solid border, consider creative patterns */
+    border-radius: 32px; /* Optional: rounded corners */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adding some depth */
+    position: relative; /* For pseudo-elements or additional styling */
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: auto; /* Center the container itself */
+  flex-wrap: wrap;
+  width: 380px;
+  gap: 20px; /* Increase the gap between items */
+  --b: 3px;   /* the border thickness */
+  --h: 1.8em; /* the height */
+  }
+  
+  .buttons button {
+    --_c: #002dc1bd;
+    flex: calc(1.25 + var(--_s,0));
+    min-width: 0;
+    font-size: 25px;
+    font-weight: bold;
+    height: var(--h);
+    cursor: pointer;
+    color: var(--_c);
+    border: var(--b) solid var(--_c);
+    background: 
+      conic-gradient(at calc(100% - 1.3*var(--b)) 0,var(--_c) 209deg, #0000 211deg) 
+      border-box;
+    clip-path: polygon(0 0,100% 0,calc(100% - 0.577*var(--h)) 100%,0 100%);
+    padding: 0 calc(0.288*var(--h)) 0 0;
+    margin: 0 calc(-0.288*var(--h)) 0 0;
+    box-sizing: border-box;
+    transition: flex .4s;
+    border-radius: 9px; ;
+  }
+
+  .buttons button + button {
+    --_c: #FF003C;
+    flex: calc(.75 + var(--_s,0));
+    background: 
+      conic-gradient(from -90deg at calc(1.3*var(--b)) 100%,var(--_c) 119deg, #0000 121deg) 
+      border-box;
+    clip-path: polygon(calc(0.577*var(--h)) 0,100% 0,100% 100%,0 100%);
+    margin: 0 0 0 calc(-0.288*var(--h));
+    padding: 0 0 0 calc(0.288*var(--h));
+  }
+
+  .buttons button:focus-visible {
+    outline-offset: calc(-2*var(--b));
+    outline: calc(var(--b)/2) solid #000;
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  .buttons button:focus-visible + button {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  .buttons button:has(+ button:focus-visible) {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button:hover,
+  button:active:not(:focus-visible) {
+    --_s: .75;
+  }
+
+  button:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #fff;
+  }
+  
+
+  /* Pie chart */
+.end-screen-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.end-screen-container > div {
+    flex: 1; 
+}
+
+
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #002dc1bd;
+  --bs-btn-border-color: #002dc1bd;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #021659bd;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6d00c1bd;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+
+
+/* Add the button styles here */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 12px;
+
+}
+
+button.learn-more {
+  margin: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ 
+ button.learn-more::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.75em, -1em);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ 
+ button.learn-more:hover {
+  background: #ffe9e9;
+  -webkit-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+ }
+ 
+ button.learn-more:hover::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+ }
+ 
+ button.learn-more:active {
+  background: #ffe9e9;
+  -webkit-transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
+ }
+ 
+ button.learn-more:active::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
+ }
