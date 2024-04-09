@@ -27,8 +27,6 @@ def perform_action(data):
     # Placeholder for actions based on received data
     return "Data processed"
 
-
-
 @eel.expose
 def start_new_game():
     game_state.reset_game_state()  # Reset the game state for a new game

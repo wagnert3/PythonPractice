@@ -1,12 +1,70 @@
+#IMPORTING THE LIBRARIES
+
+
+#FUNCTIONS
+
+##def calculate_bmi(weight, height):
+    
+    
+    
+
+##def calculate_and_show_bmi():
+    
+      
+      
+      
+    # try:
+       
+        
+        # Determine the BMI category
+        
+        
+        
+        
+        
+        
+        
+        # Show the result in a messagebox
+        
+        
+    # except ValueError:
+        
+            
+
+# Setting up the Tkinter window
+
+
+
+
+# Creating and placing widgets in the window (label, entry, button)
+
+# label_weight = tk.Label(root, text="Enter your weight in kg:")
+# label_weight.pack() #pack() is used to display the widget on the window
+
+# entry_weight = tk.Entry(root)
+# entry_weight.pack()
+
+
+
+
+
+# Start the Tkinter event loop
+
+
+
+
+
+
 import tkinter as tk
 from tkinter import messagebox
 
 def calculate_bmi(weight, height):
-    """Calculate and return the BMI based on weight and height."""
+    """Calculate and return the BMI based on weight and height.""" # we use three double quotes to write a multi-line comment
     return weight / (height ** 2)
 
 def calculate_and_show_bmi():
-    """Get input from the user, calculate BMI, and show the category."""
+    """Get input from the user, calculate BMI, and show the category."""  
+      
     try:
         weight = float(entry_weight.get())
         height = float(entry_height.get())
@@ -52,3 +110,10 @@ calculate_button.pack()
 
 # Start the Tkinter event loop
 root.mainloop() #mainloop() is used to run the window in an infinite loop until the user closes it
+
+
+
+
+
+
+

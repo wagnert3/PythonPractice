@@ -9,20 +9,17 @@ words_and_hints = {
     'ocean': 'A large body of salt water that covers most of the Earth\'s surface.',
     'eclipse': 'An astronomical event where one celestial body moves into the shadow of another.',
     'volcano': 'A mountain or hill with a crater which lava, rock fragments, hot vapor, and gas are being or have been erupted from the Earth\'s crust.',
-    'sahara': 'The largest hot desert in the world, located in North Africa.',
     'kangaroo': 'A large hopping mammal from Australia, known for carrying its babies in a pouch.',
     'pyramid': 'A monumental structure with a square or triangular base and sloping sides that meet in a point at the top, especially in Egypt.',
     'amazon': 'The largest rainforest in the world, or the longest river in South America.',
     'sherlock': 'A fictional detective known for his keen observational skills and deductive reasoning.',
     'titanic': 'A famous ship that sank in the North Atlantic Ocean in 1912.',
     'chocolate': 'A sweet, brown food made from roasted and ground cacao seeds, often eaten as a candy.',
-    'himalayas': 'The highest mountain range in the world,',
     'piano': 'A large keyboard musical instrument',
-    'sudoku': 'A number puzzle game where each row, column, and region must contain all digits from 1 to 9.'
 }
 
 def choose_word_and_hint():
-    word, hint = random.choice(list(words_and_hints.items()))
+    word, hint = random.choice(list(words_and_hints.items())) # choice is a function from the random module that picks a random element from a list
     return word, hint
 
 def display_progress(word, correct_guesses):
@@ -57,7 +54,10 @@ def play_game():
                 if show_hint == 'yes':
                     print(f"Hint: {hint}")
                     hint_shown = True
-
+                else:
+                    print("No hint for you, then!")  
+                    
+                      
     if '_' not in display_progress(word, correct_guesses):
         print("Congratulations, you won!")
     else:
