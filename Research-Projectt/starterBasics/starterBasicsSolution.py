@@ -104,7 +104,20 @@ for item in my_list:
 # The function `add` defined above can be used for this exercise. Testing has also been shown 
 # above.
 
+def sum_of_two_numbers(a, b):
+    return a + b
 
+# Test 1
+result1 = sum_of_two_numbers(10, 5)
+print("Sum of 10 and 5 is:", result1)  # Expected output: 15
+
+# Test 2
+result2 = sum_of_two_numbers(-1, 1)
+print("Sum of -1 and 1 is:", result2)  # Expected output: 0
+
+# Test 3
+result3 = sum_of_two_numbers(2.5, 3.5)
+print("Sum of 2.5 and 3.5 is:", result3)  # Expected output: 6.0
 
 
 

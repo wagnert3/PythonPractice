@@ -6,9 +6,10 @@
 # This is crucial for the interactivity of Eel applications, 
 # allowing your frontend (JavaScript) to interact with your backend (Python) dynamically.
 
-import eel
-import sys  # Import sys module
-import json
+
+import eel # this lybrary is used to create a web-based GUI for the game by using HTML, CSS, and JavaScript.
+import sys  # Import sys module for closing the application
+import json 
 from game_state import GameState
 
 # Create an instance of GameState
@@ -26,8 +27,6 @@ def perform_action(data):
     print(f"Received data: {data}")
     # Placeholder for actions based on received data
     return "Data processed"
-
-
 
 @eel.expose
 def start_new_game():
@@ -82,5 +81,6 @@ def show_end_screen():
     points_json = json.dumps(points)
     eel.drawChart(points_json)
    
-if __name__ == "__main__":
+if __name__ == "__main__": # why does it has this underscore in the name? because
+    
     eel.start('html/index.html', size=(800, 700))
