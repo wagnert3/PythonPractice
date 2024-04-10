@@ -19,3 +19,8 @@ gui.typewrite('curl ascii.live/can-you-hear-me')  #typewrite is used to type the
 gui.press('enter')
 
 
+
+
+
+# Running Man - curl ascii.live/forrest
+# Rick Roll - curl ascii.live/can-you-hear-me

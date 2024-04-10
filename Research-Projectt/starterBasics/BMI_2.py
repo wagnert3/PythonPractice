@@ -18,20 +18,19 @@
         
         # Determine the BMI category
         
-        
-        
-        
-        
+           
         
         
         # Show the result in a messagebox
         
         
     # except ValueError:
-        
-            
+    
+            #messagebox.showerror("Input error", "Please enter valid numbers for weight and height.")
 
+            
 # Setting up the Tkinter window
+
 
 
 
@@ -110,6 +109,9 @@ def calculate_and_show_bmi():
     except ValueError: # except block is used to handle the exceptions and ValueError is used to handle the error related to the value of the input
         
             messagebox.showerror("Input error", "Please enter valid numbers for weight and height.")
+            
+    # except Exception as e:
+    #         print(f"An error occurred: {e}")
 
 # Setting up the Tkinter window
 root = tk.Tk() #root is the name of the window, Tk() is the constructor of the window and tk is the module name
