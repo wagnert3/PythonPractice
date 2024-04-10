@@ -1,8 +1,5 @@
 #
 # IMPORT A CLASS RANDOMLY
-#
-
-
 
 
 
@@ -38,18 +35,9 @@
 
 
 
-
-
-
-
-
 #
 # CREATE A FUNCTION TO DISPLAY PROGRESS. IT MEANS CHECK IF THERE IS A LETTER OR A _
 #
-
-
-
-
 
 
 
@@ -57,8 +45,30 @@
 # CREATE A FUNCTION TO PLAY THE GAME
 #
 
-   
 
+
+#
+# UNCOMMENT THIS PART TO FIGURE THE WORD
+#
+
+    # while attempts > 0 and '_' in display_progress(word, correct_guesses):
+    #     print(display_progress(word, correct_guesses))
+    #     guess = input("Guess a letter: ").lower()
+
+    #     if guess in correct_guesses:
+    #         print("You already tried that letter.")
+    #         continue
+    #     elif guess in word:
+    #         correct_guesses.append(guess)
+    #         print("Correct!")
+    #     else:
+    #         attempts -= 1
+    #         print(f"Wrong! You have {attempts} attempts left.")
+    #         if attempts <= 3 and not hint_shown:
+    #             show_hint = input("Do you want a hint (yes or no)? ").lower()
+    #             if show_hint == 'yes' or  show_hint == 'y':
+    #                 print(f"Hint: {hint}")
+    #                 hint_shown = True
 
 
 
