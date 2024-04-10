@@ -54,7 +54,7 @@ def play_game():
             print(f"Wrong! You have {attempts} attempts left.")
             if attempts <= 3 and not hint_shown:
                 show_hint = input("Do you want a hint (yes or no)? ").lower()
-                if show_hint == 'yes':
+                if show_hint == 'yes' or show_hint == 'y':
                     print(f"Hint: {hint}")
                     hint_shown = True
 
