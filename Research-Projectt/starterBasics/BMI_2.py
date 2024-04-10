@@ -55,6 +55,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import tkinter as tk
 from tkinter import messagebox
 
@@ -66,7 +89,7 @@ def calculate_and_show_bmi():
     """Get input from the user, calculate BMI, and show the category."""  
       
     try:
-        weight = float(entry_weight.get())
+        weight = float(entry_weight.get()) #get() is used to get the value from the entry widget
         height = float(entry_height.get())
         bmi = calculate_bmi(weight, height)
         bmi_rounded = round(bmi, 2)

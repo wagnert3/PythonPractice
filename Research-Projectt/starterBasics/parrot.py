@@ -17,3 +17,5 @@ time.sleep(0.5)
 
 gui.typewrite('curl ascii.live/can-you-hear-me')  #typewrite is used to type the text in the command prompt and curl is used to display the parrot.live
 gui.press('enter')
+
+

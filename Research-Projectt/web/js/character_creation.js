@@ -1,13 +1,13 @@
 // web/js/character_creation.js
 
 /////// TEST  ////////////////
-function autoFillForm() {
-    document.getElementById('name').value = 'Test Name';
-    document.getElementById('age').value = '25';
-    document.querySelector('input[name="student_type"][value="International"]').checked = true;
-    document.querySelector('input[name="work_status"][value="Part-time"]').checked = true;
-    document.getElementById('has_kids').checked = false;
-}
+// function autoFillForm() {
+//     document.getElementById('name').value = 'Test Name';
+//     document.getElementById('age').value = '25';
+//     document.querySelector('input[name="student_type"][value="International"]').checked = true;
+//     document.querySelector('input[name="work_status"][value="Part-time"]').checked = true;
+//     document.getElementById('has_kids').checked = false;
+// }
 
 // Ensure DOM is fully loaded before calling autoFillForm
 document.addEventListener('DOMContentLoaded', (event) => {
